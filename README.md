@@ -1,41 +1,20 @@
-# ⛪ Exame de Consciência - Preparação para a Confissão
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+# Run and deploy your AI Studio app
 
-Um aplicativo **mobile-first** desenvolvido para auxiliar os fiéis na prática espiritual do exame de consciência. O app guia o usuário através de uma reflexão baseada na doutrina católica para uma confissão bem preparada e frutuosa.
+This contains everything you need to run your app locally.
 
----
+View your app in AI Studio: https://ai.studio/apps/d1180b12-c6c1-4559-b4d9-0da8ec7791ec
 
-## 📋 Sobre o Projeto
+## Run Locally
 
-O objetivo deste aplicativo é oferecer uma ferramenta prática e discreta para a revisão de vida. Ele organiza os pecados sistematicamente, fornecendo explicações doutrinárias e permitindo que o usuário marque os pontos que deseja levar ao confessionário.
+**Prerequisites:**  Node.js
 
-### 🎯 Diferenciais
-- **Estratégia Mobile-First:** Interface pensada para uso em smartphones, ideal para momentos de oração individual na igreja.
-- **Arquitetura Limpa:** Código organizado para facilitar a manutenção e a adição de novos conteúdos (orações, meditações, etc.).
-- **Privacidade Absoluta:** Nenhuma informação sai do dispositivo do usuário.
 
----
-
-## ✨ Funcionalidades
-
-- **Exame Detalhado:** Dividido entre os **10 Mandamentos** e os **7 Pecados Capitais**.
-- **Conteúdo Formativo:** Explicações sobre a diferença entre **Pecados Mortais** e **Pecados Veniais**.
-- **Checklist de Reflexão:** O usuário marca os pecados identificados durante a oração.
-- **Resumo para Confissão:** Uma tela final que reúne apenas os pecados selecionados, facilitando a leitura no momento do sacramento.
-- **Persistência Segura:** Utiliza `localStorage` para que a lista não seja perdida se o app for fechado acidentalmente.
-- **Botão "Fui Perdoado":** Limpa todos os dados salvos após a confissão, simbolizando o novo início na vida de graça.
-
----
-
-## 🛠️ Tecnologias e Arquitetura
-
-- **React + Vite:** Para um ambiente de desenvolvimento rápido e performático.
-- **Tailwind CSS:** Estilização baseada em utilitários para design responsivo.
-- **Lucide-React:** Conjunto de ícones leves e elegantes.
-- **Data-Driven UI:** Os pecados estão isolados em um arquivo de configuração, permitindo atualizar os textos sem alterar a lógica do app.
-
----
-
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
