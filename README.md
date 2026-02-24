@@ -1,57 +1,41 @@
-⛪ Exame de Consciência - App de Preparação para Confissão
-Este é um Web App mobile-first desenvolvido para auxiliar fiéis católicos na prática do exame de consciência, facilitando a preparação para o Sacramento da Penitência (Confissão).
+# ⛪ Exame de Consciência - Preparação para a Confissão
 
-O diferencial deste app é a organização sistemática baseada na doutrina da Igreja, permitindo que o usuário identifique pecados contra os Dez Mandamentos e os Sete Pecados Capitais, com distinções claras entre pecados mortais e veniais.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-✨ Funcionalidades
-Exame Guiado: Lista detalhada de pecados para reflexão.
+Um aplicativo **mobile-first** desenvolvido para auxiliar os fiéis na prática espiritual do exame de consciência. O app guia o usuário através de uma reflexão baseada na doutrina católica para uma confissão bem preparada e frutuosa.
 
-Categorização Doutrinária: Divisão por 10 Mandamentos e 7 Pecados Capitais.
+---
 
-Educação na Fé: Explicações breves sobre a natureza dos pecados (Mortais vs. Veniais).
+## 📋 Sobre o Projeto
 
-Lista de Preparação: Seleção de pecados que gera um resumo automático para auxiliar no momento da confissão.
+O objetivo deste aplicativo é oferecer uma ferramenta prática e discreta para a revisão de vida. Ele organiza os pecados sistematicamente, fornecendo explicações doutrinárias e permitindo que o usuário marque os pontos que deseja levar ao confessionário.
 
-Privacidade Total: Os dados são salvos apenas localmente no dispositivo (localStorage).
+### 🎯 Diferenciais
+- **Estratégia Mobile-First:** Interface pensada para uso em smartphones, ideal para momentos de oração individual na igreja.
+- **Arquitetura Limpa:** Código organizado para facilitar a manutenção e a adição de novos conteúdos (orações, meditações, etc.).
+- **Privacidade Absoluta:** Nenhuma informação sai do dispositivo do usuário.
 
-Botão "Fui Perdoado": Função que limpa todos os registros do dispositivo após a recepção do sacramento, simbolizando o estado de graça.
+---
 
-🛠️ Tecnologias Utilizadas
-React.js (Vite)
+## ✨ Funcionalidades
 
-Tailwind CSS (Estilização Mobile-First)
+- **Exame Detalhado:** Dividido entre os **10 Mandamentos** e os **7 Pecados Capitais**.
+- **Conteúdo Formativo:** Explicações sobre a diferença entre **Pecados Mortais** e **Pecados Veniais**.
+- **Checklist de Reflexão:** O usuário marca os pecados identificados durante a oração.
+- **Resumo para Confissão:** Uma tela final que reúne apenas os pecados selecionados, facilitando a leitura no momento do sacramento.
+- **Persistência Segura:** Utiliza `localStorage` para que a lista não seja perdida se o app for fechado acidentalmente.
+- **Botão "Fui Perdoado":** Limpa todos os dados salvos após a confissão, simbolizando o novo início na vida de graça.
 
-Lucide React (Ícones)
+---
 
-Hooks Personalizados (Gerenciamento de estado e persistência)
+## 🛠️ Tecnologias e Arquitetura
 
-🏗️ Arquitetura
-O projeto foi construído utilizando uma estratégia de fácil manutenção e escalabilidade:
+- **React + Vite:** Para um ambiente de desenvolvimento rápido e performático.
+- **Tailwind CSS:** Estilização baseada em utilitários para design responsivo.
+- **Lucide-React:** Conjunto de ícones leves e elegantes.
+- **Data-Driven UI:** Os pecados estão isolados em um arquivo de configuração, permitindo atualizar os textos sem alterar a lógica do app.
 
-Feature-based Structure: Organização de componentes por funcionalidade.
+---
 
-Separation of Concerns: A lógica de dados (lista de pecados) está separada da lógica de renderização.
-
-Persistência Local: Uso de localStorage para garantir que o usuário não perca sua reflexão se o navegador fechar.
-
-🚀 Como Executar
-Clone o repositório:
-
-Bash
-git clone https://github.com/seu-usuario/exame-consciencia-app.git
-Instale as dependências:
-
-Bash
-npm install
-Inicie o servidor de desenvolvimento:
-
-Bash
-npm run dev
-🔒 Privacidade e Segurança
-Dada a natureza sensível das informações, este aplicativo:
-
-Não envia dados para nenhum servidor (No Backend).
-
-Não utiliza cookies de rastreamento.
-
-Garante que as informações existam apenas enquanto o usuário desejar, através da função de limpeza completa.
